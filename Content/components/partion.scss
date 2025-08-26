@@ -1,0 +1,255 @@
+
+
+
+@mixin container {
+    width: 90% !important;
+    &.swap{
+  
+        grid-template-columns: 50% 25%;
+     
+        >img{
+            grid-column: 2;
+        }
+
+    }
+ 
+    padding-block: 3em;
+    border-bottom: 5px solid #69c6ff; 
+
+    &.noMoreLine{
+        border-bottom: unset; 
+    }
+
+    :last-child{
+        border-bottom:unset;
+    }
+
+    display: grid;
+    grid-template-columns: 25% 50%;
+    // grid-template-columns: 50% 25%;
+    gap: 4%;
+    grid-template-rows: repeat(1, 1fr);
+    width: fit-content;
+    justify-content: center;
+    // width: 850px;
+    
+    @media (max-width: 640px) {
+        display: grid;
+        grid-template-columns: 32% 57%;
+        gap: 2%;
+        grid-template-rows: repeat(1, 1fr);
+        width: fit-content;
+        justify-content: center;
+    }
+
+
+    @media (max-width: 400px) {
+        grid-template-columns: 39% 57%;
+    }
+
+
+    >img {
+        width: 12em;
+        grid-row: 1 / 5;
+        
+        @media (max-width: 840px) {
+            width: 10em;
+        }
+
+        @media (max-width: 530px) {
+            width: 8em;
+        }
+
+
+
+    }
+
+
+
+
+    >p {
+        font-weight: unset !important;
+    }
+
+    >span {
+        font-weight: 900;
+        width: fit-content;
+        background-color: #FFECA3;
+        text-align: center;
+        height: 2em;
+        display: flex;
+        color: #5E3E1E;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.3em;
+        padding-inline: 1em;
+    }
+
+    .forSecondPart {
+
+        .planetContainer {
+            display: flex;
+            gap: 0.7em;
+            padding-block: 0.2em;
+
+            >img {
+                width: 2em;
+            }
+
+            >span {
+                font-weight: 600;
+            }
+        }
+    }
+
+
+    >p {
+        font-weight: 600;
+        order: 2;
+    }
+
+    .clockContainer {
+        display: flex;
+        align-items: center;
+        order: 3;
+
+
+        @media (max-width: 840px) {
+            order: 1;
+        }
+
+        >img {
+            width: 2em;
+
+        }
+
+        >span {
+            margin-right: 0.5em;
+        }
+    }
+
+    .seeMore {
+        background-color: #EE9307;
+        color: #fff;
+        // width: 510px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        order: 4;
+
+        @media (max-width: 530px) {
+            height: 45px;
+            grid-column: 1 /3;
+        }
+    }
+
+    a {
+        font-weight: 600;
+    }
+
+
+
+    &:nth-child(2) {
+        .leftContainer {
+
+
+            .forSecondPart {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: repeat(3, 1fr);
+
+                .planetContainer {
+                    >img {
+                        filter: hue-rotate(-171.03248049355835deg) brightness(1.4);
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    &:nth-child(3) {
+        .leftContainer {
+
+
+            .forSecondPart {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: repeat(2, 1fr);
+
+                .planetContainer {
+                    >img {
+                        filter: hue-rotate(104.00572767508459deg);
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    &:nth-child(4) {
+        .leftContainer {
+
+
+            .forSecondPart {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: repeat(2, 1fr);
+
+                .planetContainer {
+                    >img {
+                        filter: hue-rotate(307deg) brightness(1.7);
+                    }
+                }
+            }
+        }
+    }
+
+
+    &:nth-child(5) {
+        .leftContainer {
+
+
+            .forSecondPart {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: repeat(2, 1fr);
+
+                .planetContainer {
+                    >img {
+                        filter: hue-rotate(145deg) brightness(1.5);
+                    }
+                }
+            }
+        }
+    }
+
+
+    &:nth-child(6) {
+        .leftContainer {
+
+
+            .forSecondPart {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: repeat(2, 1fr);
+
+                .planetContainer {
+                    >img {
+                        filter: hue-rotate(145deg) brightness(1.5);
+                    }
+                }
+            }
+        }
+    }
+
+}

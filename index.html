@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./Content/OwlCarousel/assets/owl.theme.default.css">
   <link rel="stylesheet" href="./Content/pages/newkids2.scss">
   <link rel="stylesheet" href="owl.carousel.min.css">
-<link rel="stylesheet" href="owl.theme.default.min.css">
+  <link rel="stylesheet" href="owl.theme.default.min.css">
 
   <style>
   </style>
@@ -19,6 +19,7 @@
 
 </head>
 <script src="Scripts/js/jquery-1.11.3.min.js"></script>
+
 <body>
   <svg style="display: none;">
     <symbol id="leftArrow" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1182,22 +1183,27 @@
         <div>با تجربه ترین آموزشگاه برنامه نویسی در ایران</div>
         <div>با مجوز رسمی از سازمان فنی حرفه ای کشور</div>
         <div>
-          <a href="#" class="kids-btn regular">مشاهده دوره ها</a>
+          <a href="#" class="kids-btn regular res">مشاهده دوره ها</a>
           <a href="#" class="kids-btn">دریافت مشاوره</a>
         </div>
       </div>
-      <picture>
-        <source media="(min-width:1200px)" srcset="Content/images/kid-top.png">
-        <source media="(max-width:1200px)" srcset="Content/images/kid-top-res.png">
-        <img src="Content/images/kid-top.png" alt="Flowers">
-      </picture>
+
+      <div class="left">
+        <!-- <picture> -->
+        <!-- <source media="(min-width:1200px)" srcset="/Content/images/classTheF.png">
+        <source media="(max-width:1200px)" srcset="/Content/images/classTheF.png"> -->
+        <img id="disInRis" src="/Content/images/classTheF.png" alt="Flowers">
+        <img id="mainOneInRes" src="/Content/images/blueLight.png" alt="Flowers">
+      <!-- </picture> -->
+      </div>
+
       <!-- <img src="Content/images/kid-top.png" alt=""> -->
     </section>
 
-     <section class="kids-road">
+    <section class="kids-road">
       <div class="right">
         <p>کشف مسیر یادگیری فرزند شما: اولین قدم به سوی دنیای تکنولوژی!</p>
-        <img src="Content/images/newKidsImg2.png" alt="">
+        <img src="Content/images/Businessmen-pushing-abstract-ball-and-cube-in-race 1.png" alt="">
       </div>
       <div class="left">
         <div class="kidsTitle">آزمون تعیین دوره</div>
@@ -1224,136 +1230,360 @@
           <div class="ways-to-learn">مسیرهای یادگیری </div>
           <div class="ways-to-learn-title"> در این بخش، می‌توانید مسیرهای آموزشی را بر اساس سن فرزندتان و حوزه‌ای که
             دوست دارید در آن مهارت کسب کند، مشاهده کنید. </div>
-            <div class="yellow-sign"> <img src="Content/images/Group 37755.png" alt="">  <p>دوره کودکان </p> </div>
-          <div class="top-btn-container">
-            <button class="special-kids active" data-group="blue-container-btn" data-onclick="active" data-target="#img-container" data-targetvalue="active">ویژه کودکان</button>
-            <button class="special-kids" data-group="blue-container-btn" data-onclick="active" data-target="#owl-teens2" data-targetvalue="active">ویژه نوجوانان</button>
+          <div class="yellow-sign"> <img src="Content/images/Group 37755.png" alt="">
+            <p>دوره کودکان </p>
+          </div>
+        <div class="top-btn-container">
+          <button class="special-kids active" data-group="blue-container-btn" data-onclick="active"
+            data-target="#img-container" data-targetvalue="active">ویژه 7 تا 10 سال</button>
+          <button class="special-kids" data-group="blue-container-btn" data-onclick="active"
+            data-target="#secondBtnPart" data-targetvalue="active"> ویژه 11 تا 13 سال</button>
+          <button class="special-kids" data-group="blue-container-btn" data-onclick="active"
+            data-target="#thirdBtnPart" data-targetvalue="active"> ویژه 14 تا 17 سال</button>
+        </div>
+        </div>
+
+
+        <div id="img-container" class="img-container " data-group="blue-container-tabs">
+          <div class="container noMoreLine">
+            
+              <img src="Content/images/scrachword.png" alt="عکس دوره">
+            
+
+              <span class="title"> اسکرچ جونیور </span>
+              <p>
+                بچه‌ها تو این دوره کار با کامپیوتر رو از صفر یاد می‌گیرن، مثل نصب ویندوز، تایپ کردن و کار با برنامه‌های آفیس مثل اکسل و پاورپوینت.
+              </p>
+              <div class="clockContainer">
+                <img src="Content/images/asdasd 2.svg" alt="ایکون ساعت">
+                <span>طول دوره : 3 ترم</span>
+              </div>
+              <a class="seeMore" href="">
+                مشاهده بیشتر
+              </a>
+
           </div>
         </div>
-        <div id="img-container" class="img-container active" data-group="blue-container-tabs">
-          <img class="img-kids-sit" src="/Content/images/kids sit.png" alt="">
-          <div class="card-container">
-            <div class="light-blue">
-              <img src="/Content/images/boyWalking.png" alt="">
+
+
+        <div>
+          <div id="secondBtnPart" class="img-container " data-group="blue-container-tabs">
+            <div class="container ">
+
+                <img  src="Content/images/Group 94272683.webp" alt="عکس دوره">
+                <span class="title" style="background-color: #a9ffac; color: #38824e;"> اسکرچ  </span>
+                <p>
+                  دوره اسکرچ نوجوانان یه شروع جذاب برای ورود به دنیای برنامه‌نویسیه! توی این دوره، بچه‌ها با ساخت بازی و
+                  انیمیشن، منطق برنامه‌نویسی رو به‌صورت تصویری و سرگرم‌کننده یاد می‌گیرن.
+                </p>
+                <div class="clockContainer">
+                  <img src="Content/images/asdasd 2.svg" alt="ایکون ساعت">
+                  <span>طول دوره : 3 ترم</span>
+                </div>
+                <a style="background-color: #38824E;" class="seeMore" href="">
+                  مشاهده بیشتر
+                </a>
+
             </div>
-            <div class="content-container">
-              <div class="card-title">کشف‌گر دیجیتال</div>
-              <div class="content">اولین قدم‌های کودک در دنیای کامپیوتر و برنامه‌نویسی با اسکرچ و ICDL.</div>
-              <div class="options-container">
-                <div class="option"> <svg>
-                    <use href="#emoji" />
-                  </svg> مناسب برای کودکان زیر 12 سال </div>
-                <div class="option"> <svg>
-                    <use href="#sand-clock" />
-                  </svg> دو سطح مقدماتی و دو سطح پیشرفته </div>
-              </div>
-              <div class="button-container">
-                <a href="">ثبت نام</a>
-                <a class="card-button" href="">مشاهده دوره</a>
-              </div>
+
+            <div class="container swap">
+              <span class="title" style="background-color: #92d5ff; color: #014694;"> مهارت عمومی کامپیوتر (ICDL)  </span>
+                <p>
+                  بچه‌ها تو این دوره کار با کامپیوتر رو از صفر یاد می‌گیرن، مثل نصب ویندوز، تایپ کردن و کار با
+                  برنامه‌های آفیس مثل اکسل و پاورپوینت.
+                </p>
+                <div class="clockContainer">
+                  <img src="Content/images/asdasd 2.svg" alt="ایکون ساعت">
+                  
+                  <span>طول دوره : 2 ترم</span>
+                </div>
+                <a style="background-color: #017AD3;" class="seeMore" href="">
+                  مشاهده بیشتر
+                </a>
+
+
+             
+                <img src="Content/images/Group 94272683 (1).webp" alt="عکس دوره">
+
             </div>
+
+            <div class="container">
+
+                <img src="Content/images/Group 94272719.webp" alt="عکس دوره">
+                <span class="title" style="background-color: #fed385; color: #ba5d00;"> طراحی سایت </span>
+
+                <p>
+                  یاد می‌گیرن چطور یه سایت بسازن؛ از نوشتن کدهای ساده تا طراحی ظاهر سایت و استفاده از برنامه‌های مخصوص
+                  سایت‌سازی.
+                </p>
+                <div class="clockContainer">
+                  <img src="Content/images/asdasd 2.svg" alt="ایکون ساعت">
+                  <span>طول دوره : 3 ترم</span>
+                </div>
+                <a style="background-color: #E14D0D;" class="seeMore" href="">
+                  مشاهده بیشتر
+                </a>
+
+            </div>
+
+
+            <div class="container swap">
+
+   
+                <p>
+                  تو این دوره بچه‌ها یاد می‌گیرن با برنامه‌هایی مثل پایتون و اسکرچ دستورهایی به کامپیوتر بدن و بازی یا
+                  برنامه بسازن.
+                </p>
+
+                <span class="title" style="background-color: #dc92ff; color: #3e0194;"> برنامه نویسی  </span>
+                <div class="clockContainer">
+                  <img src="Content/images/asdasd 2.svg" alt="ایکون ساعت">
+                  <span>طول دوره : 3 ترم</span>
+                </div>
+                <a style="background-color: #7C2DA4;" class="seeMore" href="">
+                  مشاهده بیشتر
+                </a>
+
+
+                <img src="Content/images/Group 94272684.webp" alt="عکس دوره">
+
+            </div>
+
+
+
+            <div class="container noMoreLine " >
+
+                <img src="Content/images/Group 94272696.webp" alt="عکس دوره">
+                <span class="title" style="background-color: #92fffa; color: #017e94;">  ابزار های هوش مصنوعی  </span>
+ 
+                <p>
+                  آشنایی با دنیای هوش مصنوعی؛ بچه‌ها می‌فهمن هوش مصنوعی چیه و کجاها استفاده می‌شه.
+                </p>
+                <div class="clockContainer">
+                  <img src="Content/images/asdasd 2.svg" alt="ایکون ساعت">
+                  <span>طول دوره : 3 ترم</span>
+                </div>
+                <a style="background-color: #00919E;" class="seeMore" href="">
+                  مشاهده بیشتر
+                </a>
+ 
+            </div>
+
+
+
           </div>
         </div>
-        <div id="owl-teens2" class="owl-carousel owl-theme" data-group="blue-container-tabs">
-          <div class="item">
-            <div class="card-container">
-              <div class="light-blue">
-                <img src="/Content/images/magic.png" alt="">
-              </div>
-              <div class="content-container">
-                <div class="card-title">کشف‌گر دیجیتال</div>
-                <div class="content">اولین قدم‌های کودک در دنیای کامپیوتر و برنامه‌نویسی با اسکرچ و ICDL.</div>
-                <div class="options-container">
-                  <div class="option"> <svg>
-                      <use href="#emoji" />
-                    </svg> مناسب برای کودکان زیر 12 سال </div>
-                  <div class="option"> <svg>
-                      <use href="#sand-clock" />
-                    </svg> دو سطح مقدماتی و دو سطح پیشرفته </div>
+
+
+        <div class="lineeparator"></div>
+
+        <div>
+          <div id="thirdBtnPart" class="img-container " data-group="blue-container-tabs">
+
+
+
+            <div class="container swap">
+
+                <img src="Content/images/Group 94272683 (1).webp" alt="عکس دوره">
+
+
+                <p>
+                  یاد می‌گیرن چطور یه سایت بسازن؛ از نوشتن کدهای ساده تا طراحی ظاهر سایت و استفاده از برنامه‌های مخصوص سایت‌سازی.
+                </p>
+
+                <div class="forSecondPart">
+
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span> App Inventor 1 </span>
+                  </div>
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span> App Inventor 2 </span>
+                  </div>
                 </div>
-                <div class="button-container">
-                  <a href="">ثبت نام</a>
-                  <a class="card-button" href="">مشاهده دوره</a>
-                </div>
-              </div>
+
+                <a style="background-color: #017AD3;" class="seeMore" href="">
+                  مشاهده بیشتر
+                </a>
+
+
+
             </div>
-          </div>
-          <div class="item">
-            <div class="card-container">
-              <div class="light-blue">
-                <img src="/Content/images/wordpress.png" alt="">
-              </div>
-              <div class="content-container">
-                <div class="card-title">کشف‌گر دیجیتال</div>
-                <div class="content">اولین قدم‌های کودک در دنیای کامپیوتر و برنامه‌نویسی با اسکرچ و ICDL.</div>
-                <div class="options-container">
-                  <div class="option"> <svg>
-                      <use href="#emoji" />
-                    </svg> مناسب برای کودکان زیر 12 سال </div>
-                  <div class="option"> <svg>
-                      <use href="#sand-clock" />
-                    </svg> دو سطح مقدماتی و دو سطح پیشرفته </div>
+
+
+
+
+
+            <div class="container">
+
+   
+                <p>
+                  تو این دوره بچه‌ها یاد می‌گیرن با برنامه‌هایی مثل پایتون و اسکرچ دستورهایی به کامپیوتر بدن و بازی یا برنامه بسازن.
+                </p>
+
+                <div class="forSecondPart">
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span> html+css </span>
+                  </div>
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span> bootstrap </span>
+                  </div>
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span> wordpress  </span>
+                  </div>
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span> css pro  </span>
+                  </div>
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span> js+ecma  </span>
+                  </div>
                 </div>
-                <div class="button-container">
-                  <a href="">ثبت نام</a>
-                  <a class="card-button" href="">مشاهده دوره</a>
-                </div>
-              </div>
+
+                <a style="background-color: #E14D0D;" class="seeMore" href="">
+                  مشاهده بیشتر
+                </a>
+
+
+                <img src="Content/images/Group 94272719.webp" alt="عکس دوره">
+
+
             </div>
-          </div>
-          <div class="item">
-            <div class="card-container">
-              <div class="light-blue">
-                <img src="/Content/images/brain.png" alt="">
-              </div>
-              <div class="content-container">
-                <div class="card-title">کشف‌گر دیجیتال</div>
-                <div class="content">اولین قدم‌های کودک در دنیای کامپیوتر و برنامه‌نویسی با اسکرچ و ICDL.</div>
-                <div class="options-container">
-                  <div class="option"> <svg>
-                      <use href="#emoji" />
-                    </svg> مناسب برای کودکان زیر 12 سال </div>
-                  <div class="option"> <svg>
-                      <use href="#sand-clock" />
-                    </svg> دو سطح مقدماتی و دو سطح پیشرفته </div>
+
+
+
+            <div class="container swap">
+
+                <img src="Content/images/Group 94272684.webp" alt="عکس دوره">
+
+
+                <p>
+                  بچه‌ها تو این دوره کار با کامپیوتر رو از صفر یاد می‌گیرن، مثل نصب ویندوز، تایپ کردن و کار با
+                  برنامه‌های آفیس مثل اکسل و پاورپوینت.
+                </p>
+
+                <div class="forSecondPart">
+
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span> scratch </span>
+                  </div>
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span> python 2 </span>
+                  </div>
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span> python 1
+                    </span>
+                  </div>
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span>python 3
+                    </span>
+                  </div>
+
                 </div>
-                <div class="button-container">
-                  <a href="">ثبت نام</a>
-                  <a class="card-button" href="">مشاهده دوره</a>
-                </div>
-              </div>
+
+                <a style="background-color: #7C2DA4;" class="seeMore" href="">
+                  مشاهده بیشتر
+                </a>
+
+
+
             </div>
-          </div>
-          <div class="item">
-            <div class="card-container">
-              <div class="light-blue">
-                <img src="/Content/images/ai brain.png" alt="">
-              </div>
-              <div class="content-container">
-                <div class="card-title">کشف‌گر دیجیتال</div>
-                <div class="content">اولین قدم‌های کودک در دنیای کامپیوتر و برنامه‌نویسی با اسکرچ و ICDL.</div>
-                <div class="options-container">
-                  <div class="option"> <svg>
-                      <use href="#emoji" />
-                    </svg> مناسب برای کودکان زیر 12 سال </div>
-                  <div class="option"> <svg>
-                      <use href="#sand-clock" />
-                    </svg> دو سطح مقدماتی و دو سطح پیشرفته </div>
-                </div>
-                <div class="button-container">
-                  <a href="">ثبت نام</a>
-                  <a class="card-button" href="">مشاهده دوره</a>
-                </div>
-              </div>
+
+
+
+
+
+            <div class="container">
+
+             
+                <p>
+                  آشنایی با دنیای هوش مصنوعی؛ بچه‌ها می‌فهمن هوش مصنوعی چیه و کجاها استفاده می‌شه.
+                </p>
+
+                <div class="forSecondPart">
+
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span> کاربردهای هوش مصنوعی </span>
+                  </div>
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span> 3 ترم</span>
+                  </div>
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span>ML 2 
+                    </span>
+                  </div>
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span>ML 3
+                    </span>
+                  </div>
+
+                </div> 
+
+
+                <a style="background-color: #00919E;" class="seeMore" href="">
+                  مشاهده بیشتر
+                </a>
+ 
+ 
+                <img src="Content/images/Group 94272696.webp" alt="عکس دوره">
+
             </div>
+
+
+
+            <div class="container swap noMoreLine">
+                          
+   
+                <img src="Content/images/Group 94272685.webp" alt="عکس دوره">
+
+
+                <p>
+                  چه‌ها تو این دوره یاد می‌گیرن چطور برنامه‌های ساده موبایل بسازن و تو گوشی اجرا کنن.
+                </p>
+
+                <div class="forSecondPart">
+
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span> scratch </span>
+                  </div>
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span> python 2 </span>
+                  </div>
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span> python 1
+                    </span>
+                  </div>
+                  <div class="planetContainer">
+                    <img src="/Content/images/Image-Jul-3,-2025,-05_39_24-PM 1.svg" alt="planet"> <span>python 3
+                    </span>
+                  </div>
+
+                </div>
+
+                <a style="background-color: #E33B3A;" class="seeMore" href="">
+                  مشاهده بیشتر
+                </a>
+
+            </div>
+
+
+
+            </div>
+
+
+
           </div>
         </div>
+
+
+
+
+
+
       </div>
     </section>
 
 
-
- <section class="second-section">
+<!-- 
+    <section class="second-section">
       <span class="line"></span>
       <div class="cards-container-title"> ما در تمام مسیر <span class="yellow-title-text"> همراه </span> شماییم! </div>
 
@@ -1396,11 +1626,11 @@
 
       </div>
 
-    </section>
+    </section> -->
 
 
 
-<section class="third-section">
+    <!-- <section class="third-section">
       <div class="kid-laptop-container">
         <div class="backgrounds-container">
           <div class="background-blue"></div>
@@ -1433,13 +1663,13 @@
         </div>
       </div>
 
-    </section> 
+    </section> -->
 
 
 
 
 
-     <section class="fourth-section">
+    <!-- <section class="fourth-section">
       <div class="main-container">
         <div class="top-container">
           <p>چرا تحلیل داده بهترین انتخاب است ؟</p>
@@ -1484,12 +1714,31 @@
 
         </div>
       </div>
+    </section> -->
+
+
+
+
+    <section class="gallery">
+      <div class="imgContainer">
+
+      </div>
+      <div class="downTxt">
+<div class="title">
+آموزش برنامه‌نویسی<br> برای کودکان و نوجوانان چیست و چرا مهم است؟
+        </div>
+        <p>
+هر کودک و نوجوان می‌تواند ایده‌هایش را به دنیای دیجیتال بیاورد؛ کافی است مسیر و ابزار مناسب را پیدا کند. در آموزشگاه تحلیل داده، با برگزاری کلاس برنامه‌نویسی کودکان و دوره‌های تخصصی آموزش برنامه‌نویسی برای نوجوانان، مسیر یادگیری از آموزش برنامه‌نویسی کودکان با زبان اسکرچ آغاز می‌شود و تا مهارت‌های پیشرفته مثل هوش مصنوعی برای کودکان، بازی‌سازی، برنامه‌نویسی موبایل و طراحی سایت ادامه دارد. اینجا جایی است که خلاقیت فرزندتان شکل می‌گیرد، پروژه‌های واقعی ساخته می‌شوند و او با مهارت و اعتمادبه‌نفس، قهرمان مسیر یادگیری و موفقیت خود می‌شود.
+        </p>
+      </div>
     </section>
 
 
 
-<section class="fifth-section">
-      <div class="right">
+
+ <section class="fifth-section">
+
+          <div class="right">
         <div class="giv-product"> ارائه مدرک بین المللی فنی و حرفه ای </div>
         <p class="product-text">هنرجویان عزیز، مدرک آموزشگاه تحلیل داده، مدرک رسمی از سازمان فنی و حرفه‌ای می‌باشد.
           دانشجویان پس از پایان دوره با ارائه پروژه کاربردی خود به آموزشگاه و پس از تایید استاد دوره گواهی پایان دوره
@@ -1502,135 +1751,233 @@
           </div>
         </div>
       </div>
-    </section>
 
-
-
-
-
-     <section class="sixth-section">
-      <div class="opinions">
-        <p class="your-opinion-text">نظرات شما، اعتبار ما</p>
-        <p>در این بخش، می‌توانید نظرات والدین و دانش‌آموزانی که در دوره‌های برنامه‌نویسی ما شرکت کرده‌اند را بخوانید. ما
-          باور داریم که بهترین معرفی، تجربه واقعی شماست!</p>
-      </div>
-      <div class="background-blue">
-
-      </div>
-      <div id="commentSlider" class="slid-container owl-carousel ">
-        <div class="item">
-          <div class="name-container">
-            <div class="img-container">
-              <img src="/Content/images/Ellipse 862.png" alt="مرتضی حرمتی">
-              <div class="info-text">
-                <p>مرتضی حرمتی</p>
-                <p class="scratch-text">دانش آموخته دوره اسکرچ</p>
-                <span class="stars">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </span>
-              </div>
-            </div>
-
-          </div>
-          <p class="opinions-text">در این بخش، می‌توانید نظرات والدین و دانش‌آموزانی که در دوره‌های برنامه‌نویسی ما شرکت
-            کرده‌اند را بخوانید. ما باور داریم که بهترین معرفی، تجربه واقعی شماست!</p>
-        </div>
-        <div class="item">
-          <div class="name-container">
-            <div class="img-container">
-              <img src="/Content/images/Ellipse 862.png" alt="مرتضی حرمتی">
-              <div class="info-text">
-                <p>مرتضی حرمتی</p>
-                <p class="scratch-text">دانش آموخته دوره اسکرچ</p>
-                <span class="stars">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </span>
-              </div>
-            </div>
-
-          </div>
-          <p class="opinions-text">در این بخش، می‌توانید نظرات والدین و دانش‌آموزانی که در دوره‌های برنامه‌نویسی ما شرکت
-            کرده‌اند را بخوانید. ما باور داریم که بهترین معرفی، تجربه واقعی شماست!</p>
-        </div>
-        <div class="item">
-          <div class="name-container">
-            <div class="img-container">
-              <img src="/Content/images/Ellipse 862.png" alt="مرتضی حرمتی">
-              <div class="info-text">
-                <p>مرتضی حرمتی</p>
-                <p class="scratch-text">دانش آموخته دوره اسکرچ</p>
-                <span class="stars">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </span>
-              </div>
-            </div>
-
-          </div>
-          <p class="opinions-text">در این بخش، می‌توانید نظرات والدین و دانش‌آموزانی که در دوره‌های برنامه‌نویسی ما شرکت
-            کرده‌اند را بخوانید. ما باور داریم که بهترین معرفی، تجربه واقعی شماست!</p>
-        </div>
-        <div class="item">
-          <div class="name-container">
-            <div class="img-container">
-              <img src="/Content/images/Ellipse 862.png" alt="مرتضی حرمتی">
-              <div class="info-text">
-                <p>مرتضی حرمتی</p>
-                <p class="scratch-text">دانش آموخته دوره اسکرچ</p>
-                <span class="stars">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </span>
-              </div>
-            </div>
-
-          </div>
-          <p class="opinions-text">در این بخش، می‌توانید نظرات والدین و دانش‌آموزانی که در دوره‌های برنامه‌نویسی ما شرکت
-            کرده‌اند را بخوانید. ما باور داریم که بهترین معرفی، تجربه واقعی شماست!</p>
-        </div>
-
-        <div class="item">
-          <div class="name-container">
-            <div class="img-container">
-              <img src="/Content/images/Ellipse 862.png" alt="مرتضی حرمتی">
-              <div class="info-text">
-                <p>مرتضی حرمتی</p>
-                <p class="scratch-text">دانش آموخته دوره اسکرچ</p>
-                <span class="stars">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </span>
-              </div>
-            </div>
-
-          </div>
-          <p class="opinions-text">در این بخش، می‌توانید نظرات والدین و دانش‌آموزانی که در دوره‌های برنامه‌نویسی ما شرکت
-            کرده‌اند را بخوانید. ما باور داریم که بهترین معرفی، تجربه واقعی شماست!</p>
-        </div>
-      </div>
     </section> 
 
 
 
 
-<section class="weblog">
+      <div class="yellowBackMain">
+
+        <div class="imgTop">
+            <img src="/Content/images/WhatsApp-Image-2019-07-08-at-5.42 1.png" alt="مدرک پایان دوره">
+        </div>
+
+        <div class="txtDown">
+<div class="giv-product"> ارائه مدرک بین المللی فنی و حرفه ای </div>
+        <p class="product-text">هنرجویان عزیز، مدرک آموزشگاه تحلیل داده، مدرک رسمی از سازمان فنی و حرفه‌ای می‌باشد.
+          دانشجویان پس از پایان دوره با ارائه پروژه کاربردی خود به آموزشگاه و پس از تایید استاد دوره گواهی پایان دوره
+          خود را دریافت می‌نمایند.</p>
+        </div>
+
+      </div>
+
+
+
+
+
+      <section class="fourPics">
+        <div class="contents">
+          <div class="right">
+            <img src="./Content/images/kids.png">
+          </div>
+          <div class="left">
+            <div class="title">
+              کار تیمی در محیط واقعی
+            </div>
+            <p class="txtContent">
+             کنار هم بودن، ایده دادن، و حل مسئله با کمک همدیگه، مهارتیه که توی کلاس‌های ما از همون روز اول یاد می‌گیرید.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="contents">
+          <div class="right replaced">
+            <img src="./Content/images/kids2.png">
+          </div>
+          <div class="left">
+            <div class="title">
+تجربه ابزار و تکنولوژی روز
+            </div>
+            <p class="txtContent">
+            کار با لپ‌تاپ، نرم‌افزارها و ابزارهای واقعی برنامه‌نویسی رو همون‌طور که توی شرکت‌ها استفاده میشه یاد می‌گیرند.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="contents">
+          <div class="right">
+            <img src="./Content/images/kids3.png">
+          </div>
+          <div class="left">
+            <div class="title">
+چالش حل مسئله
+            </div>
+            <p class="txtContent">
+             با مسائلی روبه‌رو میشن که نیاز به فکر، آزمون‌وخطا و همکاری داره؛ درست مثل دنیای واقعی.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="contents">
+          <div class="right replaced">
+            <img src="./Content/images/kids4.png">
+          </div>
+          <div class="left">
+            <div class="title">
+ ارتباط با مربیان حرفه‌ای
+            </div>
+            <p class="txtContent">
+              مربی‌ها نه‌فقط درس میدن، بلکه مثل منتور کنار بچه‌ها هستند تا مسیرشون رو پیدا کنند.
+            </p>
+          </div>
+        </div>
+
+
+      </section>
+
+
+
+
+
+<section class="sixth-section">
+
+
+  <div class="background-blue">  <div class="opinions">
+    <p class="your-opinion-text">نظرات شما، اعتبار ما</p>
+    <p>
+
+ در این بخش، می‌توانید نظرات والدین و دانش‌آموزانی که در دوره‌های برنامه‌نویسی ما شرکت کرده‌اند را بخوانید.<br>
+ما باور داریم که بهترین معرفی، تجربه واقعی شماست!
+    
+    </p>
+  </div></div>
+
+  <div id="commentSlider" class="slid-container owl-carousel">
+
+    <div class="item">
+      <div class="name-container">
+        <div class="img-container">
+          <img src="/Content/images/Ellipse 862.png" alt="مرتضی حرمتی">
+          <div class="info-text">
+            <p>مرتضی حرمتی</p>
+            <p class="scratch-text">دانش آموخته دوره اسکرچ</p>
+            <span class="stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <p class="opinions-text">
+        در این بخش، می‌توانید نظرات والدین و دانش‌آموزانی که در دوره‌های برنامه‌نویسی ما شرکت کرده‌اند را بخوانید. ما باور داریم که بهترین معرفی، تجربه واقعی شماست!
+      </p>
+    </div>
+
+
+    <div class="item">
+      <div class="name-container">
+        <div class="img-container">
+          <img src="/Content/images/Ellipse 862.png" alt="مرتضی حرمتی">
+          <div class="info-text">
+            <p>مرتضی حرمتی</p>
+            <p class="scratch-text">دانش آموخته دوره اسکرچ</p>
+            <span class="stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <p class="opinions-text">
+        در این بخش، می‌توانید نظرات والدین و دانش‌آموزانی که در دوره‌های برنامه‌نویسی ما شرکت کرده‌اند را بخوانید. ما باور داریم که بهترین معرفی، تجربه واقعی شماست!
+      </p>
+    </div>
+
+
+    <div class="item">
+      <div class="name-container">
+        <div class="img-container">
+          <img src="/Content/images/Ellipse 862.png" alt="مرتضی حرمتی">
+          <div class="info-text">
+            <p>مرتضی حرمتی</p>
+            <p class="scratch-text">دانش آموخته دوره اسکرچ</p>
+            <span class="stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <p class="opinions-text">
+        در این بخش، می‌توانید نظرات والدین و دانش‌آموزانی که در دوره‌های برنامه‌نویسی ما شرکت کرده‌اند را بخوانید. ما باور داریم که بهترین معرفی، تجربه واقعی شماست!
+      </p>
+    </div>
+
+
+    <div class="item">
+      <div class="name-container">
+        <div class="img-container">
+          <img src="/Content/images/Ellipse 862.png" alt="مرتضی حرمتی">
+          <div class="info-text">
+            <p>مرتضی حرمتی</p>
+            <p class="scratch-text">دانش آموخته دوره اسکرچ</p>
+            <span class="stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <p class="opinions-text">
+        در این بخش، می‌توانید نظرات والدین و دانش‌آموزانی که در دوره‌های برنامه‌نویسی ما شرکت کرده‌اند را بخوانید. ما باور داریم که بهترین معرفی، تجربه واقعی شماست!
+      </p>
+    </div>
+
+
+    <div class="item">
+      <div class="name-container">
+        <div class="img-container">
+          <img src="/Content/images/Ellipse 862.png" alt="مرتضی حرمتی">
+          <div class="info-text">
+            <p>مرتضی حرمتی</p>
+            <p class="scratch-text">دانش آموخته دوره اسکرچ</p>
+            <span class="stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <p class="opinions-text">
+        در این بخش، می‌توانید نظرات والدین و دانش‌آموزانی که در دوره‌های برنامه‌نویسی ما شرکت کرده‌اند را بخوانید. ما باور داریم که بهترین معرفی، تجربه واقعی شماست!
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+ <!-- <section class="weblog">
       <div class="right-side">
         <div class="content-right">
           <div class="weblog-title">وبلاگ</div>
@@ -1677,11 +2024,11 @@
           </div>
         </div>
       </div>
-    </section> 
+    </section>  -->
 
 
 
-<section class="seventh-section">
+ <section class="seventh-section">
       <div class="right">
         <div class="background-green">
           23 سال سابقه تخصصی آموزش برنامه نویسی
@@ -1736,7 +2083,7 @@
       </div>
 
 
-    </section>   
+    </section>
 
 
 
@@ -1749,39 +2096,55 @@
 
   <script type="module" src="Scripts/Page.js"></script>
   <script type="module" src="Scripts/js/stepByStepForm.js"></script>
-   <script>
-    $(function(){
-      $('#owl-teens2 , #weblog').owlCarousel({
-        rtl : true,
-      margin: 10,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 3
-        },
-        1000: {
-          items: 3
-        }
-      }
+  <script>
+    $(function () {
+      //   $('#owl-teens2 , #weblog').owlCarousel({
+      //     rtl : true,
+      //   margin: 10,
+      //   responsive: {
+      //     0: {
+      //       items: 1
+      //     },
+      //     600: {
+      //       items: 3
+      //     },
+      //     1000: {
+      //       items: 3
+      //     }
+      //   }
+      // })
+
+$(document).ready(function(){
+  $('#commentSlider').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    rtl: true,
+    navText: [
+      '<i class="fas fa-angle-right"></i>', 
+      '<i class="fas fa-angle-left"></i>'
+    ],
+    responsive: {
+      0: { items: 1 },       // موبایل
+      600: { items: 2 },     // تبلت
+      1000: { items: 3 }     // دسکتاپ
+    }
+  });
+});
+
     })
 
-    $('#commentSlider').owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      items: 3,
-      rtl:true,
-      navText: ['<i class="fas fa-angle-right"></i>', '<i class="fas fa-angle-left"></i>']
-    });
-    })
+
+ 
 
 
-    
-  
-    
+
+
+
+
+
   </script>
 
 </body>
+
 </html>

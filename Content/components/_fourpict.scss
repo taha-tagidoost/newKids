@@ -1,0 +1,36 @@
+@mixin contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 1em;
+  width: 85%;
+  margin: auto;
+      @media (max-width: 600px) {
+  width: 95%;
+    }
+  .right {
+    width: 20em;
+    @media (max-width: 900px) {
+      width: 24em;
+    }
+
+    @media (max-width: 500px) {
+        width: 50em;
+    }
+    > img {
+      width: 100%;
+    }
+
+    &.replaced {
+      order: 1;
+    }
+  }
+  .left {
+    .title {
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+    .txtContent {
+    }
+  }
+}
