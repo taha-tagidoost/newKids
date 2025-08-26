@@ -68,7 +68,9 @@
       flex-direction: column-reverse;
       align-items: center;
       position: relative;
+      margin-bottom: 4em;
     }
+
     .right {
       display: flex;
       flex-direction: column;
@@ -142,6 +144,8 @@
 
             @media (max-width: 500px) {
               color: #fff;
+              width: 11em;
+              font-size: 0.8em;
             }
           }
         }
@@ -161,7 +165,7 @@
         }
         #mainOneInRes {
           display: block;
-          width: 76%;
+          width: 99%;
         }
         width: 26em;
         display: flex;
@@ -171,6 +175,7 @@
       }
       @media (max-width: 500px) {
         height: 25em;
+        width: 20em;
       }
     }
   }
@@ -178,6 +183,9 @@
   .kids-around-table {
     position: relative;
     margin-top: 12em;
+    @media (max-width: 500px) {
+    margin-bottom: 7em !important;
+    }
     .blue-container {
       .img-container {
       }
@@ -194,7 +202,7 @@
     display: grid;
     grid-template-columns: 358px 800px;
     justify-content: space-between;
-    margin-bottom: 15em;
+    margin-bottom: 4em;
     .right {
       background-color: v.$bluepapularcolor;
       border-radius: var(--borderRadius);
@@ -357,8 +365,6 @@
   }
 
   .fourPics {
-    padding: 1em;
-
     .contents {
       @include fourpict.contents;
     }

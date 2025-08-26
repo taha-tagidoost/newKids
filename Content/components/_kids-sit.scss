@@ -31,8 +31,13 @@
         font-weight: 900;
         text-align: center;
         padding: 0.3em 0em;
+        @media (max-width: 600px) {
+          font-size: 2em !important;
+        }
+        @media (max-width: 520px) {
+          font-size: 1.5em !important;
+        }
       }
-
       .ways-to-learn-title {
         color: #fff;
         text-align: center;
@@ -46,12 +51,12 @@
         align-items: center;
         justify-content: space-around;
         border-radius: 10px;
-        margin: 25px auto;
+        margin: 20px auto;
         padding-inline: 1em;
         gap: 1em;
 
         @media (max-width: 600px) {
-          margin: unset ;
+          margin: unset;
         }
 
         .special-kids {
@@ -69,8 +74,8 @@
           }
 
           @media (max-width: 500px) {
-            padding: 0.7em;
-            font-size: 0.6rem;
+padding: 0.7em;
+        font-size: 0.7rem;
           }
 
           &.active {

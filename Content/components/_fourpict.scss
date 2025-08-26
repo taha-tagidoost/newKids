@@ -7,15 +7,18 @@
   margin: auto;
       @media (max-width: 600px) {
   width: 95%;
+      padding: 1em;
+
+        justify-content: space-between;
     }
   .right {
     width: 20em;
     @media (max-width: 900px) {
-      width: 24em;
+      width: 19em;
     }
 
     @media (max-width: 500px) {
-        width: 50em;
+                width: 17em;
     }
     > img {
       width: 100%;
@@ -31,6 +34,9 @@
       font-size: 1.1em;
     }
     .txtContent {
+        @media (max-width: 600px) {
+        display: none;
+      }
     }
   }
 }
