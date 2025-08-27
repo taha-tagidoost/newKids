@@ -13,6 +13,12 @@
 @use "../components/rescertificate";
 @use "../components/fourpict";
 @use "../components/Gallery";
+@use "../components/tahamodal" as modal;
+
+ .modalT{
+    @include modal.modalT;
+  }
+
 .new-kids {
   max-width: 1240px;
   margin-inline: auto;
@@ -27,7 +33,9 @@
   > section {
     margin-bottom: 6em;
   }
-
+  #secondBtnPart {
+    margin-top: -7rem;
+  }
   .kids-btn {
     font-size: 1.25em;
     font-weight: 700;
@@ -183,9 +191,14 @@
   .kids-around-table {
     position: relative;
     margin-top: 12em;
-    @media (max-width: 500px) {
-    margin-bottom: 7em !important;
+    @media (max-width: 1000px) {
+      margin-top: 20em;
     }
+    @media (max-width: 500px) {
+      margin-bottom: 7em !important;
+       margin-top: 23em;
+    }
+
     .blue-container {
       .img-container {
       }
@@ -344,7 +357,7 @@
   .weblog {
     @include blog-down-side.weblog;
   }
-
+ 
   .sixth-section {
     margin-bottom: 10em;
     margin-top: 10em;
@@ -369,6 +382,11 @@
       @include fourpict.contents;
     }
   }
+
+
+
+
+
 }
 
 @include v.media(v.$screen) {

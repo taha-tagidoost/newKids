@@ -354,6 +354,10 @@
             video.kill();
         });
     }
+    function fitContent(str){
+        return callModal(str , "fitContent");
+    }
+    console.log("sadsadaad")
     callModal.notif = notif;
     callModal.success = function (msg, duration) {
         return successFail(msg, duration, false);
@@ -370,6 +374,7 @@
     };
     callModal.image = image;
     callModal.photoVeiwer = photoVeiwer;
+    callModal.fitContent = fitContent;
     callModal.guide = guide;
     callModal.lockedVideo = lockedVideo;
     window.callModal = callModal;

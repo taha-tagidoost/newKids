@@ -18,7 +18,7 @@
     transition-property: opacity, transform;
     transition: 0.5s cubic-bezier(.1, .28, .23, 1.86);
     font-size: calc(16px * var(--scale));
-    //general
+    //generalz
     a.full {
         color: #0087ff;
         font-weight: bold;
@@ -201,7 +201,17 @@
             transform: scale(1);
         }
     }
-
+    &.fitContent{
+        .content{
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1em;
+            padding: unset;
+            height: 300px;
+        }
+    }
     &.notification,
     &.choice,
     &.spinner {
