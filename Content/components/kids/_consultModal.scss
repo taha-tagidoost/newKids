@@ -4,13 +4,13 @@
   --bg: #C5EEFF;
   --btn: #295F98;
   background: var(--bg);
-  max-width: 70vw;
   margin: auto;
   padding: 2rem;
   font-size: var(--text-lg);
+  width: 85vw;
   display: grid;
   grid-template-columns: 50% 23% 23%;
-  grid-template-rows: 4rem 3rem 3rem 3rem;
+  grid-template-rows: 5rem 4rem 4rem 4rem;
   gap: 1.5rem 1rem;
   border-radius: 1rem;
   padding: 2%;
@@ -22,14 +22,15 @@
   }
 
   input,button,select {
-    padding: .5rem;
+    color: gray;
+    padding-inline: 1rem;
     border-radius: .3rem;
     border: .15rem solid var(--btn);
     background: white;
     width: 100%;
   }
   input,select {
-    font-size: var(--text-sm);
+    /* font-size: var(--text-sm); */
     height: 100%;
   }
 
