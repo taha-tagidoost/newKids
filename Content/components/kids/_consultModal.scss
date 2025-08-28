@@ -1,3 +1,5 @@
+@use "../../components/_font-sizes.scss" as f;
+
 #consultModal {
   --bg: #C5EEFF;
   --btn: #295F98;
@@ -8,15 +10,15 @@
   font-size: var(--text-lg);
   display: grid;
   grid-template-columns: 50% 23% 23%;
-  grid-template-rows: 4rem 4rem 4rem 4rem;
-  gap: 1rem 1rem;
+  grid-template-rows: 4rem 3rem 3rem 3rem;
+  gap: 1.5rem 1rem;
   border-radius: 1rem;
   padding: 2%;
   position: relative;
   color: black;
 
   * {
-    font-size: var(--text-lg);
+    @include f.text-size(lg)
   }
 
   input,button,select {
@@ -26,10 +28,14 @@
     background: white;
     width: 100%;
   }
+  input,select {
+    font-size: var(--text-sm);
+    height: 100%;
+  }
 
   .validationMsg {
     color: red;
-    font-size: var(--text-md);
+    font-size: var(--text-sm);
     display: none;
     &.show {display: block;}
   }
