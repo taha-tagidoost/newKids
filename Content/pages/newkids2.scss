@@ -14,6 +14,7 @@
 @use "../components/fourpict";
 @use "../components/Gallery";
 @use "../components/tahamodal" as modal;
+@use "../components/kids/_consultModal.scss";
 
  .modalT{
     @include modal.modalT;
