@@ -1,4 +1,5 @@
 @use "../../components/_font-sizes.scss" as f;
+@use "../../source/_Variables.scss" as v;
 
 #consultModal {
   --bg: #C5EEFF;
@@ -71,4 +72,18 @@
     font-weight: 900;
   }
 
+  @include v.media(v.$tablet) {
+    grid-template-columns: auto;
+    grid-template-rows: auto 3.5rem 3.5rem 3.5rem 3.5rem;
+    gap: .7rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    .full {
+      grid-row: unset;
+      grid-column: unset;
+    }
+    img {
+      display: none;
+    }
+  }
 }
