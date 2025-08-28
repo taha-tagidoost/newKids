@@ -6,6 +6,6 @@ if (consultBtn && consultModal) {
     callModal.fitContent(consultModal)
   })
   consultModal.querySelector("button").addEventListener("click", () => {
-    validateSection(consultModal).then(() => callModal.success("با شما تماس گرفته میشود"))
+    validateSection(consultModal).then(() => alert("با موفقیت انجام شد!"))
   })
 }
