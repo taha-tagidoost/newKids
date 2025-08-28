@@ -357,7 +357,7 @@
     function fitContent(str){
         return callModal(str , "fitContent");
     }
-    console.log("sadsadaad")
+
     callModal.notif = notif;
     callModal.success = function (msg, duration) {
         return successFail(msg, duration, false);
