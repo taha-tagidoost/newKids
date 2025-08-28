@@ -1181,14 +1181,20 @@
       <p class="full">
         شماره تماس خود را در این بخش برای ما ثبت کنید تا کارشناسان جهت مشاوره ی رایگان با شما تماس بگیرند.
       </p>
-      <input placeholder="نام و نام خانوادگی دانش آموز"/>
-      <select>
-        <option>بازه سنی</option>
-        <option>۹ تا ۱۲ سال</option>
-        <option>۱۳ تا ۱۶ سال</option>
-        <option>۱۷ تا ۲۰ سال</option>
-      </select>
-      <input placeholder="شماه موبایل والدین" class="full"/>
+      <div>
+        <input placeholder="نام و نام خانوادگی دانش آموز" data-validate='["notEmpty"]' />
+      </div>
+      <div>
+        <select data-validate='["notEmpty","NEQ"]' data-neq="بازه سنی" data-neqerror="لطفا انتخاب کنید">
+          <option>بازه سنی</option>
+          <option>۹ تا ۱۲ سال</option>
+          <option>۱۳ تا ۱۶ سال</option>
+          <option>۱۷ تا ۲۰ سال</option>
+        </select>
+      </div>
+      <div class="full">
+        <input placeholder="شماه موبایل والدین" data-validate='["notEmpty"]'/>
+      </div>
       <button class="full">رزرو مشاوره رایگان</button>
       <i class="fas fa-plus"></i>
   </div>

@@ -24,6 +24,17 @@
     border-radius: .3rem;
     border: .15rem solid var(--btn);
     background: white;
+    width: 100%;
+  }
+
+  .validationMsg {
+    color: red;
+    font-size: var(--text-md);
+    display: none;
+    &.show {display: block;}
+  }
+  .validationError {
+    border-color: red;
   }
 
   .full {
