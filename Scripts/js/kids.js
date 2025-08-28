@@ -1,6 +1,8 @@
-let consult = document.getElementById("getConsult")
-if (consult) {
-  consult.addEventListener("click", () => {
-    callModal("")
+let consultBtn = document.getElementById("getConsult")
+let consultModal = document.getElementById("consultModal")
+if (consultBtn && consultModal) {
+  consultBtn.addEventListener("click", () => {
+    consultModal.style = ""
+    callModal.fitContent(consultModal)
   })
 }
