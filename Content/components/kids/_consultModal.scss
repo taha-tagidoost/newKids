@@ -12,6 +12,7 @@
   gap: 1rem 1rem;
   border-radius: 1rem;
   padding: 2%;
+  position: relative;
 
   * {
     font-size: var(--text-lg);
@@ -34,7 +35,13 @@
     /* transform: scale(2.3) translateY(-29.9px); */
   }
   i {
-    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(45deg);
+    padding: 1rem;
+    font-size: var(--text-2xl);
+    cursor: pointer;
   }
   button {
     background: var(--btn);
