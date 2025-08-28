@@ -6,5 +6,40 @@
   margin: auto;
   padding: 2rem;
   font-size: var(--text-lg);
+  display: grid;
+  grid-template-columns: 50% 23% 23%;
+  grid-template-rows: auto auto auto;
+  gap: 1rem 1rem;
+  border-radius: 1rem;
+  padding: 2%;
+
+  * {
+    font-size: var(--text-lg);
+  }
+
+  input,button,select {
+    padding: .5rem;
+    border-radius: .3rem;
+    border: .15rem solid var(--btn);
+    background: white;
+  }
+
+  .full {
+    grid-column: 2/4;
+  }
+  img {
+    grid-row: 1/5;
+    width: 2rem;
+    margin: auto;
+    /* transform: scale(2.3) translateY(-29.9px); */
+  }
+  i {
+    display: none;
+  }
+  button {
+    background: var(--btn);
+    color: white;
+    font-weight: bold;
+  }
 
 }
