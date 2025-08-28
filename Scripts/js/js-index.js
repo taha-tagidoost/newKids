@@ -920,6 +920,17 @@
     }, 1000);
 
     document.querySelectorAll('.attentionBanner')[0].style.display = 'none';
+
+
+    const Modal = ()=>{
+     const result = document.getElementById("testResaultModal");
+     const endQuestion =
+
+    }
+
+
+
+
 });
 
 
@@ -931,3 +942,12 @@ window.onload = () => {
         item.classList.add('start-animation');
     })
 }
+
+
+
+
+
+
+
+
+
