@@ -8,11 +8,12 @@
   font-size: var(--text-lg);
   display: grid;
   grid-template-columns: 50% 23% 23%;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 4rem 4rem 4rem 4rem;
   gap: 1rem 1rem;
   border-radius: 1rem;
   padding: 2%;
   position: relative;
+  color: black;
 
   * {
     font-size: var(--text-lg);
@@ -30,9 +31,12 @@
   }
   img {
     grid-row: 1/5;
-    width: 2rem;
+    height: 100%;
+    width: auto;
     margin: auto;
-    /* transform: scale(2.3) translateY(-29.9px); */
+    transform: scale(1.7) translateY(2.2rem);
+    transform-origin: bottom;
+    z-index: 200;
   }
   i {
     position: absolute;
@@ -46,7 +50,7 @@
   button {
     background: var(--btn);
     color: white;
-    font-weight: bold;
+    font-weight: 900;
   }
 
 }
