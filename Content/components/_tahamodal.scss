@@ -77,7 +77,14 @@
           @include font-sizes.text-size(md);
         }
       }
+      #resetBtn {
+        order: 6;
+        background: none;
+        @include font-sizes.text-size(md);
+        font-weight: bold;
+      }
       .seeMore {
+        font-weight: bold;
         background-color: #ffae00;
         color: #fff;
         height: 50px;
