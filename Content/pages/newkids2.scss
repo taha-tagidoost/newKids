@@ -263,6 +263,22 @@
         padding: 2.5em 2em;
         font-size: 1.125em;
 
+        input {
+          background: white;
+          border: 2px solid #295f98;
+          border-radius: .3rem;
+          padding: .6rem;
+          text-align: right;
+          font-size: var(--text-md);
+          color: black;
+        }
+
+        #submitContact {
+          @extend #prevBtn;
+          width: 100%;
+          justify-content: center;
+        }
+
         #title {
           font-weight: 600;
           text-align: center;

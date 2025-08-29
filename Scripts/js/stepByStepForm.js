@@ -3,9 +3,10 @@ const callResultModal = (text, link) => {
   if (!resultModal[0]) throw new Error("Result modal not found");
   resultModal.show();
   resultModal.find(".bigTxt").text(text);
-  resultModal.find(".seeMore").attr("href", link);
+  resultModal.find(".seeMore").attr("href", link);  
   callModal.fitContent(resultModal[0]);
 };
+
 const stepByStepForm = {
   questions: [
     {
@@ -78,8 +79,8 @@ const stepByStepForm = {
       ],
     },
     {
-      title: "دوره WordPress",
-      final: true,
+      title: "اطلاعات تماس",
+      contactForm: true,
       conditionToShow: [
         "q1-2q2-1q5-1q6-1q7-1",
         "q1-2q2-1q5-1q6-2q7-1",
@@ -87,103 +88,49 @@ const stepByStepForm = {
         "q1-3q2-1q5-1q6-1q7-1",
         "q1-3q2-1q5-1q6-2q7-1",
         "q1-3q2-1q5-1q6-3q7-1",
+        "q1-2q2-1q5-1q6-1q7-2",
+        "q1-2q2-1q5-1q6-2q7-2",
+        "q1-2q2-1q5-1q6-3q7-2",
+        "q1-3q2-1q5-1q6-1q7-2",
+        "q1-3q2-1q5-1q6-2q7-2",
+        "q1-3q2-1q5-1q6-3q7-2",
+        "q1-2q2-1q5-1q6-1q7-3",
+        "q1-2q2-1q5-1q6-2q7-3",
+        "q1-2q2-1q5-1q6-3q7-3",
+        "q1-3q2-1q5-1q6-1q7-3",
+        "q1-3q2-1q5-1q6-2q7-3",
+        "q1-3q2-1q5-1q6-3q7-3",
+        "q1-2q2-1q5-2",
+        "q1-3q2-1q5-2",
+        "q1-1q2-1q3-2q4-4",
+        "q1-1q2-1q3-2q4-1",
+        "q1-1q2-1q3-2q4-2",
+        "q1-1q2-1q3-2q4-3",
+        "q1-1q2-1q3-1",
+        "q1-1q2-2",
+        "q1-2q2-2",
+        "q1-3q2-2",
+        "q1-1q2-1q3-3",
       ],
     },
+
+    // The existing final steps.
+    { title: "دوره WordPress", final: true, link: "link-for-wordpress" },
     {
       title: "دوره Bootstrap & JavaScript",
       final: true,
-      conditionToShow: [
-        "q1-2q2-1q5-1q6-1q7-2",
-        "q1-2q2-1q5-1q6-2q7-2",
-        "q1-2q2-1q5-1q6-3q7-2",
-        "q1-3q2-1q5-1q6-1q7-2",
-        "q1-3q2-1q5-1q6-2q7-2",
-        "q1-3q2-1q5-1q6-3q7-2",
-      ],
+      link: "link-for-bootstrap",
     },
-    ,
-    {
-      title: "دوره React.js",
-      final: true,
-      conditionToShow: [
-        "q1-2q2-1q5-1q6-1q7-3",
-        "q1-2q2-1q5-1q6-2q7-3",
-        "q1-2q2-1q5-1q6-3q7-3",
-        "q1-3q2-1q5-1q6-1q7-3",
-        "q1-3q2-1q5-1q6-2q7-3",
-        "q1-3q2-1q5-1q6-3q7-3",
-      ],
-    },
-    {
-      title: "دوره طراحی سایت",
-      final: true,
-      conditionToShow: ["q1-2q2-1q5-2", "q1-3q2-1q5-2"],
-    },
-    {
-      title: "دوره پایتون 1",
-      final: true,
-      conditionToShow: ["q1-1q2-1q3-2q4-4", "q1-2q2-1q5-2", "q1-3q2-1q5-2"],
-    },
-    {
-      title: "دوره پایتون 2",
-      final: true,
-      conditionToShow: [
-        "q1-1q2-1q3-2q4-1",
-        "q1-2q2-1q5-1q6-1q7-1",
-        "q1-2q2-1q5-1q6-1q7-2",
-        "q1-2q2-1q5-1q6-1q7-3",
-        "q1-3q2-1q5-1q6-1q7-1",
-        "q1-3q2-1q5-1q6-1q7-2",
-        "q1-3q2-1q5-1q6-1q7-3",
-      ],
-    },
-    {
-      title: "دوره پایتون 3",
-      final: true,
-      conditionToShow: [
-        "q1-1q2-1q3-2q4-2",
-        "q1-2q2-1q5-1q6-2q7-1",
-        "q1-2q2-1q5-1q6-2q7-2",
-        "q1-2q2-1q5-1q6-2q7-3",
-        "q1-3q2-1q5-1q6-2q7-1",
-        "q1-3q2-1q5-1q6-2q7-2",
-        "q1-3q2-1q5-1q6-2q7-3",
-      ],
-    },
-    {
-      title: "هوش مصنوعی مقدماتی",
-      final: true,
-      conditionToShow: [
-        "q1-1q2-1q3-2q4-3",
-        "q1-2q2-1q5-1q6-3q7-1",
-        "q1-2q2-1q5-1q6-3q7-2",
-        "q1-2q2-1q5-1q6-3q7-3",
-        "q1-3q2-1q5-1q6-3q7-1",
-        "q1-3q2-1q5-1q6-3q7-2",
-        "q1-3q2-1q5-1q6-3q7-3",
-      ],
-    },
-    {
-      title: "دوره اسکرچ 2",
-      final: true,
-      conditionToShow: ["q1-1q2-1q3-1"],
-      link: "this is link",
-    },
-    {
-      title: "دوره ICDL کودکان",
-      final: true,
-      conditionToShow: ["q1-1q2-2"],
-    },
-    {
-      title: "دوره ICDL",
-      final: true,
-      conditionToShow: ["q1-2q2-2", "q1-3q2-2"],
-    },
-    {
-      title: "دوره اسکرچ 1",
-      final: true,
-      conditionToShow: ["q1-1q2-1q3-3"],
-    },
+    { title: "دوره React.js", final: true, link: "link-for-react" },
+    { title: "دوره طراحی سایت", final: true, link: "link-for-web-design" },
+    { title: "دوره پایتون 1", final: true, link: "link-for-python1" },
+    { title: "دوره پایتون 2", final: true, link: "link-for-python2" },
+    { title: "دوره پایتون 3", final: true, link: "link-for-python3" },
+    { title: "هوش مصنوعی مقدماتی", final: true, link: "link-for-ai" },
+    { title: "دوره اسکرچ 2", final: true, link: "link-for-scratch2" },
+    { title: "دوره ICDL کودکان", final: true, link: "link-for-icdl-kids" },
+    { title: "دوره ICDL", final: true, link: "link-for-icdl" },
+    { title: "دوره اسکرچ 1", final: true, link: "link-for-scratch1" },
   ],
   answers: "",
   prevAnswers: [],
@@ -194,48 +141,83 @@ $("#prevBtn").on("click", () => {
   stepByStepForm.answers = prevAnswer ? prevAnswer : "";
   renderQuestion();
 });
+
 const renderQuestion = () => {
   $("#title").text("");
   document.querySelector("#questions-section").innerHTML = "";
 
-  stepByStepForm.questions.forEach(
-    ({ title, options, conditionToShow, link, final }, QuestionIndex) => {
-      conditionToShow.forEach((condition) => {
-        if (condition === stepByStepForm.answers) {
-          if (final) {
-            callResultModal(title, link);
-          } else {
-            $("#title").text(title);
-            options.forEach(({ text, id, selected }) => {
-              const div = $("<div>")
-                .text(text)
-                .addClass("item")
-                .on("click", function() {
-                  stepByStepForm.prevAnswers.push(stepByStepForm.answers);
-                  stepByStepForm.answers += id;
-                  stepByStepForm.questions[QuestionIndex].options.forEach(
-                    (option) => {
-                      if (option.id === id) {
-                        option.selected = true;
-                      } else {
-                        option.selected = false;
-                      }
-                    },
-                  );
-                  $(this).addClass("active");
-                  setTimeout(() => {
-                    renderQuestion();
-                  }, 500);
-                });
-              if (selected) {
-                $(div).addClass("active");
-              }
-              $("#questions-section").append(div);
-            });
-          }
-        }
-      });
-    },
+  if (stepByStepForm.answers.length > 0) {
+    $("#prevBtn").show();
+  } else {
+    $("#prevBtn").hide();
+  }
+
+  const currentStep = stepByStepForm.questions.find(
+    (q) =>
+      q.conditionToShow && q.conditionToShow.includes(stepByStepForm.answers),
   );
+
+  if (!currentStep) return;
+
+  const { title, options, contactForm, final, link } = currentStep;
+
+  if (contactForm) {
+    $("#title").text(title);
+    const formHtml = `
+<p>تبریک! نتیجه آزمون مشخص شد. لطفا اطلاعات زیر را کامل کنید تا نتیجه را مشاه کنید</p>
+<input type="text" id="userName" placeholder="نام و نام خانوادگی دانش آموز">
+<input type="tel" id="userNumber" placeholder="شماره موبایل والدین">
+<button id="submitContact">مشاهده نتیجه</button>`;
+    $("#questions-section").html(formHtml);
+
+    $("#submitContact").on("click", () => {
+      const name = $("#userName").val();
+      const number = $("#userNumber").val();
+
+      if (name && number) {
+        console.log("Name:", name, "Number:", number);
+
+        const finalStep = stepByStepForm.questions.find(
+          (q) => q.final && q.link,
+        );
+        if (finalStep) {
+          callResultModal(finalStep.title, finalStep.link);
+        }
+      } else {
+        alert("لطفاً نام و شماره تماس خود را وارد کنید.");
+      }
+    });
+  } else if (final) {
+    // This part is now redundant, but kept for clarity.
+    // The contact form is now the only "final" step that gets to the modal.
+    callResultModal(title, link);
+  } else if (options) {
+    $("#title").text(title);
+    options.forEach(({ text, id, selected }) => {
+      const div = $("<div>")
+        .text(text)
+        .addClass("item")
+        .on("click", function() {
+          stepByStepForm.prevAnswers.push(stepByStepForm.answers);
+          stepByStepForm.answers += id;
+          currentStep.options.forEach((option) => {
+            if (option.id === id) {
+              option.selected = true;
+            } else {
+              option.selected = false;
+            }
+          });
+          $(this).addClass("active");
+          setTimeout(() => {
+            renderQuestion();
+          }, 500);
+        });
+      if (selected) {
+        $(div).addClass("active");
+      }
+      $("#questions-section").append(div);
+    });
+  }
 };
+
 renderQuestion();
