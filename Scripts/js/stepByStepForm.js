@@ -184,7 +184,7 @@ const renderQuestion = () => {
           callResultModal(finalStep.title, finalStep.link);
         }
       } else {
-        alert("لطفاً نام و شماره تماس خود را وارد کنید.");
+        callModal.fail("لطفاً نام و شماره تماس خود را وارد کنید.");
       }
     });
   } else if (final) {
