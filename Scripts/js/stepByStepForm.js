@@ -1,11 +1,10 @@
 const callResultModal = (text, link) => {
-  let resultModal = document.getElementById("testResaultModal");
-  if (!resultModal) throw new Error("Result modal not found")
-  resultModal.style = ""
-  resultModal.querySelector(".bigTxt").innerText = text;
-  resultModal.querySelector(".seeMore").href = link;
-
-  callModal.fitContent(resultModal)
+  let resultModal = $("#testResaultModal")
+  if (!resultModal[0]) throw new Error("Result modal not found")
+  resultModal.show()
+  resultModal.find(".bigTxt").text(text);
+  resultModal.find(".seeMore").attr("href", link);
+  callModal.fitContent(resultModal[0])
 }
 const stepByStepForm = {
     questions: [
