@@ -1,8 +1,10 @@
-const callResultModal = (text) => {
+const callResultModal = (text, link) => {
   let resultModal = document.getElementById("testResaultModal");
   if (!resultModal) throw new Error("Result modal not found")
   resultModal.style = ""
   resultModal.querySelector(".bigTxt").innerText = text;
+  resultModal.querySelector(".seeMore").href = link;
+
   callModal.fitContent(resultModal)
 }
 const stepByStepForm = {
@@ -113,7 +115,8 @@ const stepByStepForm = {
         {
             title: "دوره اسکرچ 2",
             final : true,
-            conditionToShow: ["q1-1q2-1q3-1"]
+            conditionToShow: ["q1-1q2-1q3-1"],
+            link: "this is link",
         },
         {
             title: "دوره ICDL کودکان",
@@ -149,7 +152,7 @@ const renderQuestion = () => {
         conditionToShow.forEach(condition => {
             if (condition === stepByStepForm.answers) {
                 if (final) {
-                  callResultModal(title)
+                  callResultModal(title, link)
                 }
                 else{
                     $('#title').text(title);
