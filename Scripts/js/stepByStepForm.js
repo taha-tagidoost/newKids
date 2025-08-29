@@ -1,3 +1,10 @@
+const validateMobile = (mobile) => {
+  if (!mobile.match(/[0-9]/)) return "شماره موبایل باید عدد باشد"
+  if (mobile.length !== 11) return "شماره موبایل باید ۱۱ رقم باشد"
+  if (!mobile.startsWith("09")) return "شماره موبایل باید با 09 شروع شود"
+
+  return null
+}
 const callResultModal = (text, link) => {
   let resultModal = $("#testResaultModal");
   if (!resultModal[0]) throw new Error("Result modal not found");
@@ -173,8 +180,11 @@ const renderQuestion = () => {
     $("#submitContact").on("click", () => {
       const name = $("#userName").val();
       const number = $("#userNumber").val();
+      
 
       if (name && number) {
+        let error = validateMobile(number); 
+        if (error) return callModal.fail(error)
         console.log("Name:", name, "Number:", number);
 
         const finalStep = stepByStepForm.questions.find(
