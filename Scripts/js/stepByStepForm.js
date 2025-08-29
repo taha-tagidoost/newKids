@@ -223,7 +223,6 @@ const renderQuestion = () => {
                     },
                   );
                   $(this).addClass("active");
-                  // $(this).siblings('.item').removeClass('active');
                   setTimeout(() => {
                     renderQuestion();
                   }, 500);
