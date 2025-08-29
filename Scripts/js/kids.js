@@ -14,10 +14,4 @@ $(() => {
       validateSection(consultModal).then(() => alert("با موفقیت انجام شد!"))
     })
   }
-
-  let resultModal = document.getElementById("testResaultModal");
-  if (resultModal) {
-    resultModal.style = ""
-    callModal.fitContent(resultModal)
-  }
 })

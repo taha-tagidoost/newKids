@@ -1,3 +1,10 @@
+const callResultModal = (text) => {
+  let resultModal = document.getElementById("testResaultModal");
+  if (!resultModal) throw new Error("Result modal not found")
+  resultModal.style = ""
+  resultModal.querySelector(".bigTxt").innerText = text;
+  callModal.fitContent(resultModal)
+}
 const stepByStepForm = {
     questions: [
         {
@@ -142,7 +149,7 @@ const renderQuestion = () => {
         conditionToShow.forEach(condition => {
             if (condition === stepByStepForm.answers) {
                 if (final) {
-                    alert(title)
+                  callResultModal(title)
                 }
                 else{
                     $('#title').text(title);
