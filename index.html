@@ -1182,10 +1182,10 @@
         شماره تماس خود را در این بخش برای ما ثبت کنید تا کارشناسان جهت مشاوره ی رایگان با شما تماس بگیرند.
       </p>
       <div>
-        <input placeholder="نام و نام خانوادگی دانش آموز" data-validate='["notEmpty"]' />
+        <input placeholder="نام و نام خانوادگی دانش آموز" data-validate='["notEmpty"]' id="childName" />
       </div>
       <div>
-        <select data-validate='["notEmpty","NEQ"]' data-neq="بازه سنی" data-neqerror="لطفا انتخاب کنید">
+        <select data-validate='["notEmpty","NEQ"]' data-neq="بازه سنی" data-neqerror="لطفا انتخاب کنید" id="childAge" >
           <option>بازه سنی</option>
           <option>۹ تا ۱۲ سال</option>
           <option>۱۳ تا ۱۶ سال</option>
@@ -1193,7 +1193,7 @@
         </select>
       </div>
       <div class="full">
-        <input placeholder="شماه موبایل والدین" data-validate='["notEmpty","number","length"]' data-length="11"/>
+        <input placeholder="شماه موبایل والدین" data-validate='["notEmpty","number","length"]' data-length="11" id="parentNumber"/>
       </div>
       <button class="full">رزرو مشاوره رایگان</button>
       <i class="fas fa-plus"></i>
