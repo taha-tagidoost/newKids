@@ -126,7 +126,8 @@
       border-radius: 1em;
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
       transition: box-shadow 0.3s ease, transform 0.3s ease;
-
+      padding: 1em;
+      height: 18em;
       @media (max-width: 600px) {
         width: 290px;
         margin: auto;
@@ -144,7 +145,7 @@
         margin: auto;
         display: flex;
         align-items: center;
-
+        border-bottom: 2px solid lightgray;
         .stars {
           font-size: 10px;
         }
@@ -152,14 +153,12 @@
         .img-container {
           display: flex;
           align-items: center;
-          padding-right: 1em;
 
           img {
             width: 100px;
           }
 
           .info-text {
-            margin-top: 1.5em;
             margin-right: 0.8em;
 
             p:nth-child(1) {
@@ -173,9 +172,9 @@
       }
 
       .opinions-text {
-        height: 8.5em;
-        padding-inline: 1.5em;
-
+        padding-top: 1em;
+        display: flex;
+        align-items: center;
         @media (max-width: 600px) {
           height: 9.5em;
         }
