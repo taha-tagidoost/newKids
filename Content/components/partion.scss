@@ -10,34 +10,12 @@
   border-bottom: 4px solid #69c6ff;
   padding-bottom: 5em;
 
-
-
-
-&:hover {
-  > img {
-    animation: planet-motion 4s cubic-bezier(0.25, 0.8, 0.25, 1) infinite;
+    &:hover {
+    > img {
+      -webkit-transform: scale(1.1) rotate(4deg);
+      transform: scale(1.1) rotate(4deg);
+    }
   }
-}
-
-@keyframes planet-motion {
-  0% { 
-    transform: translate(0, 0) rotate(0deg) scale(1); 
-  }
-  25% { 
-    transform: translate(30px, 15px) rotate(45deg) scale(1.1); 
-  }
-  50% { 
-    transform: translate(50px, 40px) rotate(90deg) scale(1.05); 
-  }
-  75% { 
-    transform: translate(30px, 65px) rotate(135deg) scale(1.1); 
-  }
-  100% { 
-    transform: translate(0, 0) rotate(180deg) scale(1); 
-  }
-}
-
-
 
 
   @media (max-width: 1110px) {
@@ -84,6 +62,7 @@
   }
 
   > img {
+    transition: .2s;
     width: 14em;
     grid-row: 1 / 5;
 
