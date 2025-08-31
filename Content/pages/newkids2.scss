@@ -328,7 +328,7 @@
         }
 
         #prevBtn {
-          align-self: flex-start;
+          align-self: flex-end;
           background-color: #295f98;
           color: white;
           border-radius: 5px;
@@ -341,6 +341,7 @@
           svg {
             width: 8px;
             height: 13px;
+            transform: rotate(180deg)
           }
         }
       }
