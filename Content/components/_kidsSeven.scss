@@ -20,7 +20,7 @@
       display: none;
     }
     .background-green {
-      background-color: #71bbb2;
+      background-color: #FFAE00;
       width: 270px;
       height: 150px;
       border-radius: 10px;
@@ -29,9 +29,10 @@
       text-align: center;
       display: flex;
       align-items: center;
-      box-shadow: 0 0 20px -4px #71bbb2;
+      box-shadow: 0 0 20px -4px #FFAE00;
       font-weight: 900;
       color: #fff;
+      left: 0;
       @media (max-width: 1150px) {
         width: 205px;
         height: 120px;
@@ -43,7 +44,7 @@
       width: 270px;
       height: 335px;
       position: absolute;
-      left: 0;
+      right: 0;
       object-fit: none;
       border-radius: 1em;
       @media (max-width: 1150px) {
@@ -56,7 +57,7 @@
       width: 270px;
       height: 335px;
       position: absolute;
-      right: 0;
+      left: 0;
       object-fit: none;
       bottom: 0;
       border-radius: 1em;
@@ -67,18 +68,18 @@
       }
     }
     .background-yellow {
-      background-color: #f7c04a;
+      background-color: #284B84;
       width: 270px;
       height: 150px;
       border-radius: 10px;
       position: absolute;
       bottom: 0;
-      left: 0;
+      right: 0;
       font-size: 1.5em;
       text-align: center;
       display: flex;
       align-items: center;
-      box-shadow: 0 0 20px -4px #f7c04a;
+      box-shadow: 0 0 20px -4px #284B84;
       font-weight: 900;
       color: #fff;
 
