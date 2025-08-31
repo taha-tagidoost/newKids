@@ -1,4 +1,5 @@
 $(() => {
+  //کد دکمه دریافت مشاوره
   let consultBtn = document.getElementById("getConsult")
   let consultModal = document.getElementById("consultModal")
   if (consultBtn && consultModal) {
