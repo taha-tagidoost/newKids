@@ -185,7 +185,7 @@ const renderQuestion = () => {
       if (name && number) {
         let error = validateMobile(number); 
         if (error) return callModal.fail(error)
-        console.log("Name:", name, "Number:", number);
+        alert(`name: ${name} num: ${number}`);
 
         const finalStep = stepByStepForm.questions.find(
           (q) => q.final && q.link,
