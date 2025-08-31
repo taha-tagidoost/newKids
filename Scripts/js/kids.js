@@ -8,10 +8,12 @@ $(() => {
       callModal.custom("fitContent", (showModal, closeModal) => {
         showModal(consultModal)
         close.addEventListener("click", closeModal)
+        consultModal.querySelector("button").addEventListener("click", () => {
+          validateSection(consultModal).then(() => {
+            closeModal().then(() => callModal.success("اطلاعات شما با موفقیت ثبت شد. کارشناسان ما در اولین فرصت با شما تماس خواهند گرفت."))
+          })
+        }, {once: true})
       })
-    })
-    consultModal.querySelector("button").addEventListener("click", () => {
-      validateSection(consultModal).then(() => alert("با موفقیت انجام شد!"))
     })
   }
 })
